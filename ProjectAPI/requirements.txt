@@ -1,0 +1,4 @@
+SQLAlchemy==1.4.37
+aiohttp==3.8.1
+marshmallow==3.16.0
+python-dateutil==2.8.2
