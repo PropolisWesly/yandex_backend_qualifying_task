@@ -43,5 +43,4 @@ metadata_obj.create_all(engine)
 app = web.Application()
 for handler in HANDLERS:
     app.router.add_view(handler[0], handler[1])
-# web.run_app(app, host='0.0.0.0', port=80)
-web.run_app(app, host='0.0.0.0', port=8080)
+web.run_app(app, host='0.0.0.0', port=80)
