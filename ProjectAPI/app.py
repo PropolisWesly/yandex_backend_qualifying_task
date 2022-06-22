@@ -39,6 +39,9 @@ history_table = Table(
 
 metadata_obj.create_all(engine)
 
+# подождём на всякий случай секунд 15, приложение же может запускаться минуту =)
+time.sleep(15)
+
 # запускаем приложение
 app = web.Application()
 for handler in HANDLERS:
