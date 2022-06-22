@@ -3,6 +3,7 @@ from handlers.handlers import HANDLERS
 from handlers.tables import DATA_BASE_ACCESS_STR
 from sqlalchemy import Table, Column, Integer, String, MetaData, DateTime, create_engine
 from sqlalchemy.dialects.postgresql import UUID
+import time
 
 # создаём подключение БД и таблицы
 engine = create_engine(DATA_BASE_ACCESS_STR)    # адрес подклчения лежит в handlers.tables
